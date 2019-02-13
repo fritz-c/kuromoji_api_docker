@@ -85,7 +85,7 @@
           </execution>
         </executions>
         <configuration>
-          <repository>kuromoji-api</repository>
+          <repository>chrisus/kuromoji-api</repository>
           <tag>${project.version}</tag>
           <buildArgs>
             <JAR_FILE>uber-${project.build.finalName}.jar</JAR_FILE>
