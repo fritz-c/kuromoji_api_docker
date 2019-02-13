@@ -33,7 +33,7 @@ public class App
             ObjectNode tokenNode = mapper.createObjectNode();
             tokenNode.put("surface", token.getSurface());
             tokenNode.put("position", token.getPosition());
-            tokenNode.put("features", featuresNode);
+            tokenNode.set("features", featuresNode);
 
             tokenArrayNode.add(tokenNode);
         }
