@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>blue.hour</groupId>
+  <groupId>com.example</groupId>
   <artifactId>kuromoji_api_docker</artifactId>
   <version>1.0</version>
 
@@ -85,7 +85,7 @@
           </execution>
         </executions>
         <configuration>
-          <repository>bluehour/kuromoji_api</repository>
+          <repository>kuromoji-api</repository>
           <tag>${project.version}</tag>
           <buildArgs>
             <JAR_FILE>uber-${project.build.finalName}.jar</JAR_FILE>

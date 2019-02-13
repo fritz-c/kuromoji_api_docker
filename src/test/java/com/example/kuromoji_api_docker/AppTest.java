@@ -1,4 +1,4 @@
-package blue.hour.kuromoji_api_docker;
+package com.example.kuromoji_api_docker;
 
 import static org.junit.Assert.assertTrue;
 
