@@ -6,7 +6,7 @@
 
   <groupId>com.example</groupId>
   <artifactId>kuromoji_api_docker</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 
   <name>kuromoji_api_docker</name>
   <!-- FIXME change it to the project's website -->
