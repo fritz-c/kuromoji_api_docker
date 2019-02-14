@@ -30,5 +30,29 @@ Sample POST payload:
 ## Development
 
 ```sh
+# Build jar and prepare dependencies
 mvn package
+
+# Execute jar file
+bin/run-dev.sh
+```
+
+## Releasing
+
+```sh
+# Update version in pom.xml
+vim pom.xml
+
+git add pom.xml
+git commit -m "chore(release): update to v1.x.x"
+
+# Update version in pom.xml
+git tag v1.x.x
+
+# Generate changelog
+npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0
+git add CHANGELOG.md
+git commit -m "chore(changelog): update changelog"
+
+git push --follow-tags
 ```
