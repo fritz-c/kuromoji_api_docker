@@ -11,7 +11,7 @@ RUN mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies
 
 COPY ./src ./src
 
-RUN mvn clean package && cp ./target/uber-*.jar ./run.jar
+RUN mvn clean package -Dbuild=full && cp ./target/uber-*.jar ./run.jar
 
 # ------ Bundle run image --------
 FROM openjdk:8-alpine
