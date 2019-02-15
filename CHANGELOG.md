@@ -1,4 +1,9 @@
-# [](https://github.com/fritz-c/kuromoji_api_docker/compare/v1.1.0...v) (2019-02-14)
+# [2.0.0](https://github.com/fritz-c/kuromoji_api_docker/compare/v1.1.0...v2.0.0) (2019-02-15)
+
+
+### Features
+
+* allow customization of port number with env var ([63323cd](https://github.com/fritz-c/kuromoji_api_docker/commit/63323cd))
 
 
 
