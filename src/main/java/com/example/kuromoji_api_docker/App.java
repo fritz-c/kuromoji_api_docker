@@ -65,8 +65,17 @@ public class App
 
     public static void main( String[] args )
     {
+        String portString = System.getenv("PORT");
+        int port;
+        try {
+            port = Integer.parseInt(portString);
+        } catch (NumberFormatException e) {
+            port = 9696;
+        }
+
+        System.out.println("Starting server at 0.0.0.0:" + port);
         Undertow server = Undertow.builder()
-                .addHttpListener(3000, "0.0.0.0")
+                .addHttpListener(port, "0.0.0.0")
                 .setHandler(new HttpHandler() {
                     @Override
                     public void handleRequest(final HttpServerExchange exchange) throws Exception {

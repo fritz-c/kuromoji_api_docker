@@ -5,9 +5,9 @@ Simple POST API for [Kuromoji](https://github.com/atilika/kuromoji) Japanese tex
 ## Usage
 
 ```sh
-docker run -d -p 3000:3000 --rm chrisus/kuromoji-api
+docker run -d -p 9696:9696 --rm chrisus/kuromoji-api
 
-curl -X POST -H "Content-Type: application/json" 'localhost:3000' -d '{ "mode":"normal", "body": "これはテストです。" }'
+curl -X POST -H "Content-Type: application/json" 'localhost:9696' -d '{ "mode":"normal", "body": "これはテストです。" }'
 # Returns:
 # {"tokens":[
 #   {"surface":"これ","position":0,"features":["名詞","代名詞","一般","*","*","*","これ","コレ","コレ"]},
